@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Live Selfie | Mohallo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/onboarding.css">
+
+</head>
+
+<body data-page="selfie">
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+
+                <img src="images/logo.png" alt="Mohallo">
+
+                <span>Mohallo</span>
+
+            </a>
+
+            <a href="identity.html" class="home-btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back
+
+            </a>
+
+        </nav>
+
+    </header>
+
+    <section class="onboarding-page">
+
+        <div class="onboarding-container">
+
+            <div class="left-panel">
+
+                <div class="overlay"></div>
+
+                <div class="left-content">
+
+                    <h1>One Last Step</h1>
+
+                    <p>
+
+                        Take a live selfie to complete your identity verification.
+
+                    </p>
+
+                    <img src="images/selfie.png" alt="Selfie Illustration">
+
+                </div>
+
+            </div>
+
+            <div class="right-panel">
+
+                <div class="onboarding-card">
+
+                    <div class="progress-section">
+
+                        <div class="progress-title">
+
+                            <h4>Verify Yourself</h4>
+
+                            <span>5 / 6</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar" style="width:83.33%;"></div>
+
+                        </div>
+
+                    </div>
+
+                    <h2>Live Selfie</h2>
+
+                    <p>
+
+                        Allow camera access and take a clear photo.
+
+                    </p>
+
+                    <form id="selfieForm">
+
+                        <div class="camera-card">
+
+                            <video id="camera" autoplay playsinline></video>
+
+                        </div>
+
+                        <button type="button" id="captureBtn" class="continue-btn">
+
+                            <i class="fa-solid fa-camera"></i>
+
+                            Capture Photo
+
+                        </button>
+
+                        <button type="submit" class="continue-btn">
+
+                            Continue
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="toast" class="toast">
+
+        <div class="toast-icon">
+
+            <i id="toastIcon" class="fa-solid fa-circle-check"></i>
+
+        </div>
+
+        <div class="toast-content">
+
+            <h4 id="toastTitle"></h4>
+
+            <p id="toastMessage"></p>
+
+        </div>
+
+    </div>
+
+    <script src="js/onboarding.js"></script>
+
+</body>
+
+</html>

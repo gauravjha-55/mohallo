@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join Mohallo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/onboarding.css">
+
+</head>
+
+<body data-page="signup">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+
+                <img src="images/logo.png" alt="Mohallo Logo">
+
+                <span>Mohallo</span>
+
+            </a>
+
+            <a href="login.html" class="home-btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back
+
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <section class="onboarding-page">
+
+        <div class="onboarding-container">
+
+            <!-- LEFT -->
+
+            <div class="left-panel">
+
+                <div class="overlay"></div>
+
+                <div class="left-content">
+
+                    <h1>
+
+                        Join Mohallo
+
+                    </h1>
+
+                    <p>
+
+                        Let's build a trusted neighbourhood together.
+
+                    </p>
+
+                    <img src="images/signin.png"
+                        alt="Signup Illustration">
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="right-panel">
+
+                <div class="onboarding-card">
+
+                    <!-- Progress -->
+
+                    <div class="progress-section">
+
+                        <div class="progress-title">
+
+                            <h4>About You</h4>
+
+                            <span>1 / 6</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar" style="width:16.66%;"></div>
+
+                        </div>
+
+                    </div>
+
+                    <h2>
+
+                        Welcome 👋
+
+                    </h2>
+
+                    <p>
+
+                        Let's begin by getting to know you.
+
+                    </p>
+
+                    <form id="signupForm">
+
+                        <div class="input-box">
+
+                            <label>
+
+                                Full Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="continue-btn">
+
+                            Continue
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </form>
+
+                    <div class="bottom-link">
+
+                        Already have an account?
+
+                        <a href="login.html">
+
+                            Login
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Toast -->
+
+    <div id="toast" class="toast">
+
+        <div class="toast-icon">
+            <i id="toastIcon" class="fa-solid fa-circle-check"></i>
+        </div>
+
+        <div class="toast-content">
+            <h4 id="toastTitle">Success</h4>
+            <p id="toastMessage">Message</p>
+        </div>
+    </div>
+    <script src="js/onboarding.js"></script>
+</body>
+</html>

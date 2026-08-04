@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Mohallo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/onboarding.css">
+
+</head>
+
+<body data-page="account">
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+
+                <img src="images/logo.png">
+
+                <span>Mohallo</span>
+
+            </a>
+
+            <a href="selfie.html" class="home-btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back
+
+            </a>
+
+        </nav>
+
+    </header>
+
+    <section class="onboarding-page">
+
+        <div class="onboarding-container">
+
+            <div class="left-panel">
+
+                <div class="overlay"></div>
+
+                <div class="left-content">
+
+                    <h1>
+
+                        Welcome Home
+
+                    </h1>
+
+                    <p>
+
+                        Create your Mohallo account to finish setup.
+
+                    </p>
+
+                    <img src="images/account.png">
+
+                </div>
+
+            </div>
+
+            <div class="right-panel">
+
+                <div class="onboarding-card">
+
+                    <div class="progress-section">
+
+                        <div class="progress-title">
+
+                            <h4>
+
+                                Secure Your Account
+
+                            </h4>
+
+                            <span>
+
+                                6 / 6
+
+                            </span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar" style="width:100%;">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <h2>
+
+                        Create Account
+
+                    </h2>
+
+                    <p>
+
+                        Choose a username and a secure password.
+
+                    </p>
+
+                    <form id="accountForm">
+
+                        <div class="input-box">
+
+                            <label>
+
+                                Username
+
+                            </label>
+
+                            <input type="text" id="username" placeholder="Choose a username" required>
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>
+
+                                Password
+
+                            </label>
+
+                            <input type="password" id="password" placeholder="Create a password" required>
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>
+
+                                Confirm Password
+
+                            </label>
+
+                            <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+
+                        </div>
+
+                        <button type="submit" class="continue-btn">
+
+                            Finish Setup
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="toast" class="toast">
+
+        <div class="toast-icon">
+
+            <i id="toastIcon" class="fa-solid fa-circle-check"></i>
+
+        </div>
+
+        <div class="toast-content">
+
+            <h4 id="toastTitle"></h4>
+
+            <p id="toastMessage"></p>
+
+        </div>
+
+    </div>
+
+    <script src="js/onboarding.js"></script>
+
+</body>
+
+</html>

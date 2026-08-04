@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Identity Verification | Mohallo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/onboarding.css">
+
+</head>
+
+<body data-page="identity">
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+
+                <img src="images/logo.png">
+
+                <span>Mohallo</span>
+
+            </a>
+
+            <a href="otp.html" class="home-btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back
+
+            </a>
+
+        </nav>
+
+    </header>
+
+    <section class="onboarding-page">
+
+        <div class="onboarding-container">
+
+            <div class="left-panel">
+
+                <div class="overlay"></div>
+
+                <div class="left-content">
+
+                    <h1>
+
+                        Build Trust
+
+                    </h1>
+
+                    <p>
+
+                        Verify your identity to help create a trusted Mohallo community.
+
+                    </p>
+
+                    <img src="images/identity.png">
+
+                </div>
+
+            </div>
+
+            <div class="right-panel">
+
+                <div class="onboarding-card">
+
+                    <div class="progress-section">
+
+                        <div class="progress-title">
+
+                            <h4>Identity Verification</h4>
+
+                            <span>4 / 6</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar" style="width:66.6%;"></div>
+
+                        </div>
+
+                    </div>
+
+                    <h2>
+
+                        Verify Identity
+
+                    </h2>
+
+                    <p>
+
+                        Upload one government-issued identity document.
+
+                    </p>
+
+                    <form id="identityForm">
+
+                        <label class="upload-card">
+
+                            <input type="file" id="identityFile" accept=".jpg,.jpeg,.png,.pdf">
+
+                            <img src="images/upload.png">
+
+                            <h3>
+
+                                Choose File
+
+                            </h3>
+
+                            <p>
+
+                                Drag & Drop or Click to Upload
+
+                            </p>
+
+                        </label>
+
+                        <button type="submit" class="continue-btn">
+
+                            Continue
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="toast" class="toast">
+
+        <div class="toast-icon">
+
+            <i id="toastIcon" class="fa-solid fa-circle-check"></i>
+
+        </div>
+
+        <div class="toast-content">
+
+            <h4 id="toastTitle"></h4>
+
+            <p id="toastMessage"></p>
+
+        </div>
+
+    </div>
+
+    <script src="js/onboarding.js"></script>
+
+</body>
+
+</html>
